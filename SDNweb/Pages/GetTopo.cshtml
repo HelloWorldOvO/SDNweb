@@ -1,0 +1,29 @@
+﻿@page
+@model GetTopoModel
+@{
+    ViewData["Title"] = "ONOS Get Topo Page";
+}
+
+<h1>@ViewData["Title"]</h1>
+<p>This page is under construction as of @ViewData["Timestamp"]</p>
+<br>
+
+<form method="POST">
+    <button type="submit" asp-page-handler="GetData" class="btn btn-primary">
+        GetTopo
+    </button>
+</form>
+<br />
+
+<p>
+    <h3>GetTopo test</h3>
+    @ViewData["Test"]
+    <h3>Devices</h3>
+    @ViewData["Devices"]
+    <h3>Hosts</h3>
+    @ViewData["Hosts"]
+    <h3>Links</h3>
+    @ViewData["Links"]
+    <h3>Deviceids</h3>
+    @ViewData["Deviceids"]
+</p>
